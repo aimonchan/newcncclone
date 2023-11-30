@@ -1,0 +1,99 @@
+.frame-child,
+.frame-item {
+  position: absolute;
+  top: 8.5px;
+  left: 97.5px;
+  border-right: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 1px;
+  height: 23px;
+}
+.frame-item {
+  left: 181.5px;
+}
+.anywhere {
+  left: 21px;
+  color: var(--color-black);
+}
+.add-guests,
+.any-week,
+.anywhere {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 12px;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-inter);
+  text-align: left;
+  display: inline-block;
+}
+.any-week {
+  left: 112px;
+  color: var(--color-black);
+}
+.add-guests {
+  left: 196px;
+  color: #888181;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #ff385c;
+  width: 27px;
+  height: 27px;
+}
+.search-icon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+.ellipse-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 6px;
+  left: 266px;
+  width: 27px;
+  height: 27px;
+}
+.line-parent {
+  position: relative;
+  border-radius: 22px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  width: 303px;
+  height: 40px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .ellipse-parent {
+    width: 27px;
+  }
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-xs: 12px;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-gainsboro: #e4dede;
+  }
+  

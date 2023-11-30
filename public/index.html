@@ -15,29 +15,53 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    
+    <title>AirbnbClone App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="row">
+      <div class="shadow-sm d-flex align-items-center justify-content-center text-decoration-underline bg-light">
+        Learn about Guest Favorites, the most loved homes on Airbnb
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex align-items-center justify-content-center">
+        <i class="fas fa-camera"></i>
+      </div>
+      <div class="col center">
+        <div id="tributton" class="d-flex align-items-center"></div>
+      </div>
+      <div class="col">
+        <div id="rightbutton" class="d-flex align-items-center justify-content-center"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="d-flex col-8 bg-light align-items-center justify-content-center">Line 3A</div>
+      <div class="col-2 bg-warning d-flex align-items-center justify-content-center">Line 3B</div>
+      <div class="col-2 bg-secondary d-flex align-items-center justify-content-center">Line 3C</div>
+    </div>
+    <div class="row">
+      <div class="col-12 heightauto">Line 4</div>
+    </div>
+    <div class="row">
+      <div class="col-12 bg-secondary heightauto">Line 5</div>
+    </div>
+    <div class="row">
+      <div class="col-12 bg-primary heightauto">Line 6</div>
+    </div>
+    <div class="row">
+      <div class="col-12 bg-danger heightauto">Line 7</div>
+    </div>
+    <div class="row">
+      <div class="col-12 bg-primary heightauto">Line 8</div>
+    </div>
+    
+    
   </body>
 </html>
