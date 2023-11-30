@@ -4,9 +4,11 @@ function Rightbutton() {
         <div className="group-parent">
       <button className="frame-parent">
         <div className="male-user-wrapper">
-          <img className="male-user-icon" alt="" src="./public/male-user@2x.png" />
+        <i className="fa-solid fa-user male-user-icon d-flex align-items-center justify-content-center"></i>
         </div>
-        <img className="vector-icon" alt="" src="./public/vector.svg" />
+        <div className='d-flex align-items-center justify-content-center'>
+        <i className="fa-solid fa-bars vector-icon"></i>
+        </div>
       </button>
       <button className="frame-group">
         <div className="group-item"></div>
@@ -14,7 +16,7 @@ function Rightbutton() {
       </button>
       <button className="frame-container">
         <div className="group-inner"></div>
-        <img className="geography-icon" alt="" src="./public/geography@2x.png" />
+        <i className="fa-solid fa-globe geography-icon d-flex align-items-center justify-content-center"></i>
       </button>
     </div>
     );
