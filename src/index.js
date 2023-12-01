@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Tributton from './Tributton';
 import Rightbutton from './Rightbutton';
+import Card from './Card';
 
 
 const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
@@ -20,6 +21,12 @@ rightbutton.render(
   </React.StrictMode>
 );
 
+const card = ReactDOM.createRoot(document.getElementById('card'));
+card.render(
+  <React.StrictMode>
+    <Card />
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

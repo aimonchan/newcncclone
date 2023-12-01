@@ -32,3 +32,9 @@ div{
     border-bottom: 0.25px solid lightgray;
 }
 
+.card{
+    width:100%;
+    height:auto;
+    display:flex;
+    border:none;
+}
