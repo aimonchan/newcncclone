@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Tributton from './Tributton';
 import Rightbutton from './Rightbutton';
 import Card from './Card';
+import Tabbar from './Tabbar';
 
 
 const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
@@ -25,6 +26,13 @@ const card = ReactDOM.createRoot(document.getElementById('card'));
 card.render(
   <React.StrictMode>
     <Card />
+  </React.StrictMode>
+);
+
+const tabbar = ReactDOM.createRoot(document.getElementById('tabbar'));
+tabbar.render(
+  <React.StrictMode>
+    <Tabbar />
   </React.StrictMode>
 );
 

@@ -149,4 +149,10 @@
     /* Border radiuses */
     --br-15xl: 34px;
   }
+
+  .divcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
     

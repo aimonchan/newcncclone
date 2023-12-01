@@ -1,6 +1,7 @@
 import './Rightbutton.css';
 function Rightbutton() {
     return(
+      <div className="divcontainer">
         <div className="group-parent">
       <button className="frame-parent">
         <div className="male-user-wrapper">
@@ -18,6 +19,7 @@ function Rightbutton() {
         <div className="group-inner"></div>
         <i className="fa-solid fa-globe geography-icon d-flex align-items-center justify-content-center"></i>
       </button>
+    </div>
     </div>
     );
 }
