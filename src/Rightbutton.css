@@ -20,13 +20,13 @@
     left: 0;
     border-radius: 28px;
     background-color: var(--color-white);
-    border: 0.5px solid #666;
+    border: 0.5px solid rgba(82, 81, 81, 0.25);
     box-sizing: border-box;
     width: 82px;
     height: 44px;
   }
   .male-user-wrapper:hover {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(82, 81, 81, 0.25);
   }
   .vector-icon {
     position: absolute;
@@ -62,7 +62,7 @@
     overflow: hidden;
   }
   .group-item:hover {
-    background-color: var(--color-gainsboro-100);
+    background-color: rgba(134, 133, 133, 0.25);
   }
   .airbnb-your-home {
     position: absolute;
@@ -98,7 +98,7 @@
     overflow: hidden;
   }
   .group-inner:hover {
-    background-color: var(--color-gainsboro-100);
+    background-color: rgba(134, 133, 133, 0.25);
   }
   .geography-icon {
     position: absolute;
@@ -142,7 +142,7 @@
   
     /* Colors */
     --color-white: #fff;
-    --color-black: #000;
+    --color-black: #474646;
     --color-gainsboro-100: #efe5e5;
     --color-gainsboro: #e4dede;
   

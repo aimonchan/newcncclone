@@ -21,3 +21,20 @@ div{
     justify-content: center;
     align-content: center;
 }
+
+.subcontainer{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.bottomborder {
+    border-bottom: 0.25px solid lightgray;
+}
+
+.card{
+    width:100%;
+    height:auto;
+    display:flex;
+    border:none;
+}
