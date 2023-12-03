@@ -38,3 +38,9 @@
     display:flex;
     border:none;
 }
+
+.showmap{
+    position:fixed;
+    z-index: 200px;
+    bottom: 50px;
+}
