@@ -9,6 +9,7 @@ import Tabbar from './Tabbar';
 import Footer from './Footer';
 import Showmapbut from './Showmapbut';
 import Showmore from './Showmore';
+import Carouselbut from './Carouselbut';
 
 
 const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
@@ -57,6 +58,13 @@ const showmore = ReactDOM.createRoot(document.getElementById('showmore'));
 showmore.render(
   <React.StrictMode>
     <Showmore />
+  </React.StrictMode>
+);
+
+const carouselbut = ReactDOM.createRoot(document.getElementById('carouselbut'));
+carouselbut.render(
+  <React.StrictMode>
+    <Carouselbut />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function

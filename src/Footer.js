@@ -3,6 +3,7 @@ function Footer(){
     return(
         <div>
             <footer className="footer-10">
+			
 			<div className="container">
 				
 				<div className="row">
