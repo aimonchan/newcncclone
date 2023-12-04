@@ -8,6 +8,7 @@ import Card from './Card';
 import Tabbar from './Tabbar';
 import Footer from './Footer';
 import Showmapbut from './Showmapbut';
+import Showmore from './Showmore';
 
 
 const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
@@ -49,6 +50,13 @@ const showmapbut = ReactDOM.createRoot(document.getElementById('showmapbut'));
 showmapbut.render(
   <React.StrictMode>
     <Showmapbut />
+  </React.StrictMode>
+);
+
+const showmore = ReactDOM.createRoot(document.getElementById('showmore'));
+showmore.render(
+  <React.StrictMode>
+    <Showmore />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function

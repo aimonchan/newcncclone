@@ -5,7 +5,7 @@ function Rightbutton() {
         <div className="group-parent">
       <button className="frame-parent">
         <div className="male-user-wrapper">
-        <i className="fa-solid fa-user male-user-icon d-flex align-items-center justify-content-center"></i>
+        <i className="fa-solid fa-user-circle fa-2x text-secondary male-user-icon d-flex align-items-center justify-content-center"></i>
         </div>
         <div className='d-flex align-items-center justify-content-center'>
         <i className="fa-solid fa-bars vector-icon"></i>

@@ -1,6 +1,7 @@
 function Tabbar(){
     return(
         <>
+        <div><h5>Inspiration for future getaways</h5></div>
         <ul className="nav nav-tabs mb-3" id="pills-tab" role="tablist">
             <li className="nav-item" role="presentation">
             <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Popular</button>

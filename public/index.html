@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
     />
     <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     
     <title>AirbnbClone App</title>
   </head>
@@ -36,7 +37,11 @@
   <div class="container-fluid">
       <div class="row bottomborder divheight">
       <div class="col d-flex align-items-center justify-content-start ms-5">
-        <i class="fas fa-camera"></i>
+        <i class="fa-solid fa-star fa-lg text-secondary"></i>
+        <i class="fa-solid fa-star fa-lg text-dark"></i>
+        <i class="fa-solid fa-star fa-4x text-danger"></i>
+        <i class="fa-solid fa-star fa-lg text-dark"></i>
+        <i class="fa-solid fa-star fa-lg text-secondary"></i>
       </div>
       <div class="col center">
         <div id="tributton" class="d-flex align-items-center"></div>
@@ -70,17 +75,17 @@
       </div>
     </div>
     <div>
-      <div class="col-12 bg-warning heightauto">Show More</div>
+      <div id="showmore" class="col-12 heightauto d-flex align-items-center justify-content-center"></div>
     </div>
-    <div>
-      <div class="col-12 bg-warning heightauto">Show More</div>
-    </div>
-    <div>
-      <div class="col-12 heightauto">
-        <div id="tabbar"></div>
-      </div>
+  </br>
+  </div>
+
+  <div>
+    <div class="col-12 heightauto bg-light pt-3 ps-4 pe-4">
+      <div id="tabbar"></div>
     </div>
   </div>
+
   <div>
     <div class="container-fluid bg-dark heightauto text-light">
       <div id="footer"></div>
