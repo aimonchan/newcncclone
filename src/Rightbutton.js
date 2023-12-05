@@ -1,25 +1,13 @@
 import './Rightbutton.css';
 function Rightbutton() {
     return(
-      <div className="divcontainer">
-        <div className="group-parent">
-      <button className="frame-parent">
-        <div className="male-user-wrapper">
-        <i className="fa-solid fa-user-circle fa-2x text-secondary male-user-icon d-flex align-items-center justify-content-center"></i>
-        </div>
-        <div className='d-flex align-items-center justify-content-center'>
-        <i className="fa-solid fa-bars vector-icon"></i>
-        </div>
-      </button>
-      <button className="frame-group">
-        <div className="group-item"></div>
-        <div className="airbnb-your-home">Airbnb your home</div>
-      </button>
-      <button className="frame-container">
-        <div className="group-inner"></div>
-        <i className="fa-solid fa-globe geography-icon d-flex align-items-center justify-content-center"></i>
-      </button>
-    </div>
+      <div>
+            <button className="btn btn-light rounded-pill border-0">Airbnb your home</button>
+            <button className="btn btn-light rounded-pill border-0"><i class="fa-solid fa-globe"></i></button>
+            <a type="button" className="btn btn-light rounded-pill d-inline-flex align-items-center justify-content-around border">
+            <div><i className="fa-solid fa-bars me-2"></i></div>
+            <div><i className="fa-solid fa-user-circle fa-2x text-secondary me-0 ms-2"></i></div>
+            </a>
     </div>
     );
 }

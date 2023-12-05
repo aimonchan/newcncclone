@@ -10,6 +10,8 @@ import Footer from './Footer';
 import Showmapbut from './Showmapbut';
 import Showmore from './Showmore';
 import Carouselbut from './Carouselbut';
+import Copyright from './Copyright';
+
 
 
 const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
@@ -65,6 +67,13 @@ const carouselbut = ReactDOM.createRoot(document.getElementById('carouselbut'));
 carouselbut.render(
   <React.StrictMode>
     <Carouselbut />
+  </React.StrictMode>
+);
+
+const copyright = ReactDOM.createRoot(document.getElementById('copyright'));
+copyright.render(
+  <React.StrictMode>
+    <Copyright />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
