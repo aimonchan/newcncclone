@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import "../node_modules/slick-carousel/slick/slick.css";
-import "../node_modules/slick-carousel/slick/slick-theme.css";
+import "../../node_modules/slick-carousel/slick/slick.css";
+import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 function Carouselbut(){
     const settings = {

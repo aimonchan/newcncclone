@@ -1,8 +1,7 @@
 import './Footer.css';
 function Footer(){
     return(
-        <div className="d-flex align-items-start justify-content-start">
-
+<div className="d-flex align-items-start justify-content-start">
 	<div style={{'marginRight':'200px'}}>
       <ul className='list-unstyled'>
 		<li><b>Support</b></li>

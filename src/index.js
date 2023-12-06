@@ -2,16 +2,38 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Tributton from './Tributton';
-import Rightbutton from './Rightbutton';
-import Card from './Card';
-import Tabbar from './Tabbar';
-import Footer from './Footer';
-import Showmapbut from './Showmapbut';
-import Showmore from './Showmore';
-import Carouselbut from './Carouselbut';
-import Copyright from './Copyright';
+import Tributton from './components/Tributton';
+import Rightbutton from './components/Rightbutton';
+import Card from './components/Card';
+import Tabbar from './components/Tabbar';
+import Footer from './components/Footer';
+import Showmapbut from './components/Showmapbut';
+import Showmore from './components/Showmore';
+import Carouselbut from './components/Carouselbut';
+import Logo from './components/Logo';
+import Socialbut from './components/Socialbut';
+import Centerbutsm from './components/Centerbutsm';
 
+const centerbutsm = ReactDOM.createRoot(document.getElementById('centerbutsm'));
+centerbutsm.render(
+  <React.StrictMode>
+    <Centerbutsm />
+  </React.StrictMode>
+);
+
+const socialbut = ReactDOM.createRoot(document.getElementById('socialbut'));
+socialbut.render(
+  <React.StrictMode>
+    <Socialbut />
+  </React.StrictMode>
+);
+
+const logo = ReactDOM.createRoot(document.getElementById('logo'));
+logo.render(
+  <React.StrictMode>
+    <Logo />
+  </React.StrictMode>
+);
 
 
 const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
@@ -70,12 +92,7 @@ carouselbut.render(
   </React.StrictMode>
 );
 
-const copyright = ReactDOM.createRoot(document.getElementById('copyright'));
-copyright.render(
-  <React.StrictMode>
-    <Copyright />
-  </React.StrictMode>
-);
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
