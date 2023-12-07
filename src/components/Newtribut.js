@@ -1,11 +1,10 @@
-import './Tributton.css';
-function Tributton() {
+function Newtribut(){
     return(
-        <div class="bttn btn-group btn-group-md border rounded-pill" role="group">
+        <div class="btn-group btn-group-md border rounded-pill" role="group">
             <button type="button" class="btn">Anywhere</button>
-            <div className="d-flex align-items-center text-secondary text-muted">|</div>
+            <div className="d-flex align-items-center">|</div>
             <button type="button" class="btn">Anyweek</button>
-            <div className="d-flex align-items-center text-secondary text-muted">|</div>
+            <div className="d-flex align-items-center">|</div>
             <button type="button" class="btn">Add Guests</button>
             <div className="d-flex align-items-center me-2">
             <button type="button" class="btn btn-danger rounded-pill" style={{'width':'30px','height':'30px'}}>
@@ -16,4 +15,4 @@ function Tributton() {
     );
 }
 
-export default Tributton;
+export default Newtribut;

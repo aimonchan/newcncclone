@@ -14,6 +14,7 @@ import Logo from './components/Logo';
 import Socialbut from './components/Socialbut';
 import Centerbutsm from './components/Centerbutsm';
 
+
 const centerbutsm = ReactDOM.createRoot(document.getElementById('centerbutsm'));
 centerbutsm.render(
   <React.StrictMode>
