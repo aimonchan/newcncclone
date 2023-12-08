@@ -13,7 +13,15 @@ import Carouselbut from './components/Carouselbut';
 import Logo from './components/Logo';
 import Socialbut from './components/Socialbut';
 import Centerbutsm from './components/Centerbutsm';
+import Filterbut from './components/Filterbut';
 
+
+const filterbut = ReactDOM.createRoot(document.getElementById('filterbut'));
+filterbut.render(
+  <React.StrictMode>
+    <Filterbut />
+  </React.StrictMode>
+);
 
 const centerbutsm = ReactDOM.createRoot(document.getElementById('centerbutsm'));
 centerbutsm.render(

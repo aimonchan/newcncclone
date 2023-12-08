@@ -1,8 +1,8 @@
 import './Footer.css';
 function Footer(){
     return(
-<div className="d-flex align-items-start justify-content-start">
-	<div style={{'marginRight':'200px'}}>
+<div className="row">
+	<div className="col" style={{'marginRight':'200px'}}>
       <ul className='list-unstyled'>
 		<li><b>Support</b></li>
 		<li>Help Center</li>
@@ -15,7 +15,7 @@ function Footer(){
 	</div>  
       
     
-	<div style={{'marginRight':'200px'}}>
+	<div className="col" style={{'marginRight':'200px'}}>
       <ul className='list-unstyled'>
 		<li><b>Hosting</b></li>
 		<li>AirCover for Hosts</li>
@@ -29,7 +29,7 @@ function Footer(){
       
     
 
-	<div>
+	<div className="col">
       <ul className='list-unstyled'>
 		<li><b>Airbnb</b></li>
 		<li>Newsroom</li>

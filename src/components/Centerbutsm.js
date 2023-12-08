@@ -1,7 +1,7 @@
 import './Centerbutsm.css';
 function Centerbutsm(){
     return(
-    <div className="bttn pt-2 pb-2 d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none d-flex align-items-center justify-content-center w-100">
+    <div className="bttn pt-2 pb-2 d-flex align-items-center justify-content-center d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none col-sm-12 w-100" style={{'background-color': 'white'}}>
         <button className="btn rounded-pill border w-75 text-start d-inline-flex align-items-center">
         <i className="fa fa-search text-dark "></i>
         <div className="ms-3">

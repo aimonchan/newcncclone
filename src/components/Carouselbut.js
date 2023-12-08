@@ -44,29 +44,27 @@ function Carouselbut(){
       }
  
     return(
-        
-        <div className="ms-5 me-5 mt-3">
-
-        <Slider {...settings}>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
-        </Slider>
+        <div className="ms-4 mt-3 mb-3 ps-5 pe-5">
+          <Slider {...settings}>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+            <button type="button" class="btn btn-outline"><i class="fa-solid fa-star text-secondary"></i><br></br>Primary</button>
+          </Slider>
         </div>
     );
 }
