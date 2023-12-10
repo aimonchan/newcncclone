@@ -1,21 +1,17 @@
-const button = document.getElementById("showmapbut");
-const div8 = document.getElementById("showmore");
-let scrollThresshold= 250;
+function myFunction(){
+  const element = document.getElementById("showmore");
+  const rect = element.getBoundingClientRect();
+  const but = document.getElementById("showmapbut");
+  let rectTop= rect.top;
+  const windowHeight = window.innerHeight;
+  
 
-window.onscroll = function(){
-    const div8Rect = div8.getBoundingClientRect();
-    const scrollY= window.scrollY;
-
-
-    // Check if the "showmore" div is in the viewport
-    if (scrollY>= scrollThresshold && div8Rect.top && div8Rect.bottom) {
-        button.style.display = "none";
-    } else {
-        button.style.display = "block";
-    };
-
-}
-
-
-
+  if(windowHeight>=rectTop) {
+  but.style.display = "none";
+  // document.getElementById("demoA").innerHTML= "ScrollY:" + scrollY;
     
+  } else {
+  but.style.display = "flex";
+  }
+};
+window.onscroll= myFunction;

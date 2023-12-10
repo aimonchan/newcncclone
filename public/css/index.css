@@ -46,7 +46,7 @@
     border:none;
 }
 
-.showmap{
+#showmapbut{
     position:fixed;
     z-index: 200px;
     bottom: 50px;
