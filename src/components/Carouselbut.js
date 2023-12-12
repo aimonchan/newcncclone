@@ -13,7 +13,34 @@ function Carouselbut(){
         slidesToScroll: 2,
         lazyLoad:true,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 3,
+              infinite: false,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      
       };
 
       function SampleNextArrow(props) {
