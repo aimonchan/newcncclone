@@ -1,6 +1,5 @@
 import './Testing.css';
-import React from 'react';
-import { ReactDOM } from 'react-dom';
+import React, {useState, useRef, useEffect} from 'react';
 
 const buttonWidth=100;
 function Testing() {
