@@ -33,6 +33,7 @@ function Testing() {
 
   return (
     <div className="multi-carousel">
+      <button className="arrow left" onClick={() => moveCarousel(trackRef.current, 'left')}>Left</button>
       <div className="carousel-track" ref={trackRef}>
             <button>Button 1</button>
             <button>Button 2</button>
@@ -53,7 +54,6 @@ function Testing() {
             <button>Button 17</button>
             <button>Button 18</button>       
       </div>
-      <button className="arrow left" onClick={() => moveCarousel(trackRef.current, 'left')}>Left</button>
       <button className="arrow right" onClick={() => moveCarousel(trackRef.current, 'right')}>Right</button>
     </div>
   );
