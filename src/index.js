@@ -14,12 +14,12 @@ import Logo from './components/Logo';
 import Socialbut from './components/Socialbut';
 import Centerbutsm from './components/Centerbutsm';
 import Filterbut from './components/Filterbut';
-import Testing from './components/Testing';
+import AMCarousel from './components/AMCarousel';
 
-const testing = ReactDOM.createRoot(document.getElementById('testing'));
-testing.render(
+const amcarousel = ReactDOM.createRoot(document.getElementById('amcarousel'));
+amcarousel.render(
   <React.StrictMode>
-    <Testing />
+    <AMCarousel />
   </React.StrictMode>
 );
 

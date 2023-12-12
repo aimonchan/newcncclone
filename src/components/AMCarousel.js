@@ -1,7 +1,7 @@
-import './Testing.css';
+import './AMCarousel.css';
 import React, {useState, useRef, useEffect} from 'react';
 
-const buttonWidth=100;
+const buttonWidth=20;
 function Testing() {
   const [position, setPosition] = useState(0);
   const trackRef = useRef(null);
@@ -11,6 +11,7 @@ function Testing() {
     setPosition(newPosition);
 
     track.scrollTo({ left: newPosition * buttonWidth, behavior: 'smooth' });
+    // setPosition(0);
   };
 
   useEffect(() => {
@@ -20,7 +21,9 @@ function Testing() {
     arrowButtons.forEach(button => {
       button.addEventListener('click', () => {
         const direction = button.classList.contains('left') ? 'left' : 'right';
-        moveCarousel(track, direction);
+        setPosition(prevState => prevState + (direction === 'left' ? -1 : 1));
+      track.scrollTo({ left: position * buttonWidth, behavior: 'smooth' });
+        // moveCarousel(track, direction);
       });
     });
 
@@ -33,8 +36,10 @@ function Testing() {
 
   return (
     <div className="multi-carousel">
-      <button className="arrow left" onClick={() => moveCarousel(trackRef.current, 'left')}>Left</button>
-      <div className="carousel-track" ref={trackRef}>
+      <button className="arrow left btn btn-light rounded-pill shadow text-secondary" onClick={() => moveCarousel(trackRef.current, 'left')}>
+      <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <div className="carousel-track mt-1" ref={trackRef}>
             <button>Button 1</button>
             <button>Button 2</button>
             <button>Button 3</button>
@@ -54,7 +59,9 @@ function Testing() {
             <button>Button 17</button>
             <button>Button 18</button>       
       </div>
-      <button className="arrow right" onClick={() => moveCarousel(trackRef.current, 'right')}>Right</button>
+      <button className="arrow right btn btn-light rounded-pill text-secondary" onClick={() => moveCarousel(trackRef.current, 'right')}>
+      <i class="fa-solid fa-angle-right"></i>
+      </button>
     </div>
   );
 }
