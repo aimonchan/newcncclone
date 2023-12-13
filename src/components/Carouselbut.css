@@ -1,0 +1,19 @@
+.multi-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    flex: 1;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  
+  button {
+    background-color:white;
+    border-radius: 10px;
+  }
+  
+  .arrow {
+    color: yellow;
+  }

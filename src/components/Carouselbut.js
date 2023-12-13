@@ -1,3 +1,4 @@
+import './Carouselbut.css';
 import React, {useState, useRef, useEffect} from 'react';
 
 const buttonWidth=20;
@@ -35,28 +36,28 @@ function Carouselbut() {
 
   return (
     <div className="multi-carousel">
-      <button className="arrow left btn btn-light rounded-pill shadow text-secondary" onClick={() => moveCarousel(trackRef.current, 'left')}>
+      <button className="arrow left btn btn-light rounded-pill text-secondary" onClick={() => moveCarousel(trackRef.current, 'left')}>
       <i class="fa-solid fa-angle-left"></i>
       </button>
       <div className="carousel-track mt-1" ref={trackRef}>
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-            <button>Button 4</button>
-            <button>Button 5</button>
-            <button>Button 6</button>
-            <button>Button 7</button>
-            <button>Button 8</button>
-            <button>Button 9</button>
-            <button>Button 10</button>
-            <button>Button 11</button>
-            <button>Button 12</button>
-            <button>Button 13</button>
-            <button>Button 14</button>
-            <button>Button 15</button>
-            <button>Button 16</button>
-            <button>Button 17</button>
-            <button>Button 18</button>       
+            <button className='btn'>Button 1</button>
+            <button className='btn'>Button 2</button>
+            <button className='btn'>Button 3</button>
+            <button className='btn'>Button 4</button>
+            <button className='btn'>Button 5</button>
+            <button className='btn'>Button 6</button>
+            <button className='btn'>Button 7</button>
+            <button className='btn'>Button 8</button>
+            <button className='btn'>Button 9</button>
+            <button className='btn'>Button 10</button>
+            <button className='btn'>Button 11</button>
+            <button className='btn'>Button 12</button>
+            <button className='btn'>Button 13</button>
+            <button className='btn'>Button 14</button>
+            <button className='btn'>Button 15</button>
+            <button className='btn'>Button 16</button>
+            <button className='btn'>Button 17</button>
+            <button className='btn'>Button 18</button>       
       </div>
       <button className="arrow right btn btn-light rounded-pill text-secondary" onClick={() => moveCarousel(trackRef.current, 'right')}>
       <i class="fa-solid fa-angle-right"></i>

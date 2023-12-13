@@ -14,14 +14,7 @@ import Logo from './components/Logo';
 import Socialbut from './components/Socialbut';
 import Centerbutsm from './components/Centerbutsm';
 import Filterbut from './components/Filterbut';
-import AMCarousel from './components/AMCarousel';
 
-const amcarousel = ReactDOM.createRoot(document.getElementById('amcarousel'));
-amcarousel.render(
-  <React.StrictMode>
-    <AMCarousel />
-  </React.StrictMode>
-);
 
 
 const filterbut = ReactDOM.createRoot(document.getElementById('filterbut'));
