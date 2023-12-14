@@ -14,8 +14,14 @@ import Logo from './components/Logo';
 import Socialbut from './components/Socialbut';
 import Centerbutsm from './components/Centerbutsm';
 import Filterbut from './components/Filterbut';
+import Demo from './components/Demo';
 
-
+const demo = ReactDOM.createRoot(document.getElementById('demo'));
+demo.render(
+  <React.StrictMode>
+    <Demo />
+  </React.StrictMode>
+);
 
 const filterbut = ReactDOM.createRoot(document.getElementById('filterbut'));
 filterbut.render(

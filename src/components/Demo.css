@@ -1,0 +1,23 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divheight{
+    height:85px;
+}
+
+.mainmargin{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.whiteback{
+    background-color: yellowgreen;
+    z-index: 200;
+}
+
+.form-control{
+    border:0;
+}
