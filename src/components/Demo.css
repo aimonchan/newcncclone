@@ -9,8 +9,8 @@
 }
 
 .mainmargin{
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .whiteback{
@@ -20,4 +20,16 @@
 
 .form-control{
     border:0;
+}
+
+.w-15{
+    width: 15%;
+}
+
+.w-30{
+    width:30%;
+}
+
+.bg-lightgray{
+    background-color: lightgray;
 }
