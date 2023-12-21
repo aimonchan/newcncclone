@@ -1,5 +1,28 @@
 import './Demo.css';
+import React, {useState, useRef, useEffect} from 'react';
 function Demo(){
+
+    const [isToggled,setToggled]= useState(false);
+    const buttonRef= useRef(null);
+    const handleToggled=()=>{
+        setToggled(true)
+    }
+    
+    const handleClickOutside=(event)=>{
+        if(buttonRef.current && !buttonRef.current.contains(event.target)) {
+            setToggled(false);
+        }
+    };
+
+    useEffect(()=>{
+        document.addEventListener('mousedown',handleClickOutside);
+
+        return()=>{
+            document.removeEventListener('mousedown',handleClickOutside);
+        };
+    },[]);
+
+    
     return(
         <div className="bg-light">
             <div className="center divheight">
@@ -12,7 +35,7 @@ function Demo(){
 
             <div className="container-fluid center divheight ps-5 pe-5 whiteback">
                 <div className="btn-group bg-lightgray rounded-pill w-100 mainmargin shadow-sm" role="group" aria-label="Basic example">
-                    <a className="btn bg-light rounded-pill border w-30 ps-3 pe-3">
+                    <a className="btn bg-light rounded-pill border w-30 ps-3 pe-3" onClick={handleToggled} ref={buttonRef}>
                         <div className="text-start">Where</div>
                         <input type className="form-control form-control-sm no-border focus-ring focus-ring-light" placeholder="Search Destinations"></input>
                     </a>
@@ -42,7 +65,7 @@ function Demo(){
             </div>
 
             <div className="container-fluid bg-none center dropdown-content heightauto d-flex justify-content-center h-50">
-                <div className="worldmap">Hello</div>
+                <div className="worldmap" style={{display: isToggled? 'block': 'none'}}>Hello</div>
                 <div className="worldmapB">worldmapB</div>
                 <div className="worldmapC">worldmapC</div>
             </div>
