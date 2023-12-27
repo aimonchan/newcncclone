@@ -2,38 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Tributton from './components/Tributton';
-import Rightbutton from './components/Rightbutton';
 import Card from './components/Card';
 import Tabbar from './components/Tabbar';
 import Footer from './components/Footer';
 import Showmapbut from './components/Showmapbut';
 import Showmore from './components/Showmore';
 import Carouselbut from './components/Carouselbut';
-import Logo from './components/Logo';
 import Socialbut from './components/Socialbut';
-import Centerbutsm from './components/Centerbutsm';
 import Filterbut from './components/Filterbut';
-import Demo from './components/Demo';
+import Rowtwo from './components/Rowtwo';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const demo = ReactDOM.createRoot(document.getElementById('demo'));
-demo.render(
+const rowtwo = ReactDOM.createRoot(document.getElementById('rowtwo'));
+rowtwo.render(
   <React.StrictMode>
-    <Demo />
+    <Rowtwo/>
   </React.StrictMode>
 );
+
 
 const filterbut = ReactDOM.createRoot(document.getElementById('filterbut'));
 filterbut.render(
   <React.StrictMode>
     <Filterbut />
-  </React.StrictMode>
-);
-
-const centerbutsm = ReactDOM.createRoot(document.getElementById('centerbutsm'));
-centerbutsm.render(
-  <React.StrictMode>
-    <Centerbutsm />
   </React.StrictMode>
 );
 
@@ -44,27 +35,7 @@ socialbut.render(
   </React.StrictMode>
 );
 
-const logo = ReactDOM.createRoot(document.getElementById('logo'));
-logo.render(
-  <React.StrictMode>
-    <Logo />
-  </React.StrictMode>
-);
 
-
-const tributton = ReactDOM.createRoot(document.getElementById('tributton'));
-tributton.render(
-  <React.StrictMode>
-    <Tributton />
-  </React.StrictMode>
-);
-
-const rightbutton = ReactDOM.createRoot(document.getElementById('rightbutton'));
-rightbutton.render(
-  <React.StrictMode>
-    <Rightbutton />
-  </React.StrictMode>
-);
 
 const card = ReactDOM.createRoot(document.getElementById('card'));
 card.render(
