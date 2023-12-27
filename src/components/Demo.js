@@ -3,7 +3,7 @@ function Demo(){
 
       
     return(
-        <div className="bg-light demobut">
+        <div className="demobut">
             <div className="center divheight">
                 <div className="btn-group" role="group" aria-label="Basic example">
                     <a className='btn'>Stays</a>              
