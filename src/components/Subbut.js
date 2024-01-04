@@ -1,41 +1,99 @@
 import './Subbut.css';
-function Subbut(){
-    return(
-        <div className="container-fluid center divheight ps-5 pe-5 whiteback">
-                <div className="btn-group bg-lightgray rounded-pill w-100 mainmargin shadow-sm" role="group" aria-label="Basic example">
-                    <a className="btn bg-light rounded-pill border w-30 ps-3 pe-3">                       <div className="text-start">Where</div>
-                        <input type className="form-control form-control-sm no-border focus-ring focus-ring-light" placeholder="Search Destinations"></input>
-                    </a>
+import React, {useState,useRef,useEffect} from 'react';
+function Subbut(props){
 
-                    
-                    <a className="btn bg-light rounded-pill text-start ps-3 pe-3 border">
-                            <div><label>Check in</label></div>
-                            <div className="text-muted">Add dates</div>
-                    </a>
-                    <a className="btn bg-light rounded-pill w-15 text-start ps-3 pe-3 border">
-                        <div>Check out</div>
-                        <div className="text-muted">Add dates</div>
-                    </a>
-                    <a className="row btn bg-light rounded-pill w-30 ps-3 pe-3 border d-flex">
-                        <div className="col text-start d-inline-block">
-                            <div>Who</div>
-                            <div className="text-muted">Add Guests</div>
-                        </div>
-                        <div className='col d-flex align-items-center justify-content-end'>
-                            <button className="btn btn-danger rounded-pill ms-auto me-0">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+     const {onTogglebut}= props;
+
+    const [isWherebuttoggled,setWherebuttoggled]= useState(false);
+    const handleWherebut=()=>{
+        setWherebuttoggled(!isWherebuttoggled);
+        setCheckinbut(false);
+        setCheckoutbut(false);
+        setAddguestbut(false);
+    }
+
+    const [isCheckinbut,setCheckinbut]=useState(false);
+    const handleCheckinbut=()=>{
+        setCheckinbut(!isCheckinbut);
+        setCheckoutbut(false);
+        setWherebuttoggled(false);
+        setAddguestbut(false);
+    }
+
+    const [isCheckoutbut,setCheckoutbut]=useState(false);
+    const handleCheckoutbut=()=>{
+        setCheckoutbut(!isCheckoutbut);
+        setCheckinbut(false);
+        setWherebuttoggled(false);
+        setAddguestbut(false);
+    }
+
+    const [isAddguestbut,setAddguestbut]=useState(false);
+    const handleAddguestbut=()=>{
+        setAddguestbut(!isAddguestbut);
+        setCheckoutbut(false);
+        setCheckinbut(false);
+        setWherebuttoggled(false);
+    }
+
+    const butRef= useRef(null);
+
+    useEffect(()=>{
+        const handleClickOutside=(event)=>{
+            if(butRef.current && !butRef.current.contains(event.target)){
+                setCheckoutbut(false);
+                setCheckinbut(false);
+                setWherebuttoggled(false);
+                setAddguestbut(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return()=>{
+            document.removeEventListener('mousedown',handleClickOutside);
+        };
+    },[]);
+    return(
+        <div>
+                <div className='center butgroup'>
+                    <div class="btn-group mr-2 border" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-light" onClick={handleWherebut}>
+                            <div className="text-start" >Where</div>
+                            <input type="text" className="form-control form-control-sm no-border focus-ring focus-ring-light" placeholder="Search Destinations"></input>
+                        </button>
+
+                        <button type="button" class="btn btn-light" onClick={handleCheckinbut} style={{display: onTogglebut? 'block': 'none'}}>
+                            <div className='text-start'>Date</div>
+                            <div className="text-muted text-start">Add dates</div>
+                        </button>
+                        
+                        <button type="button" class="btn btn-light" onClick={handleCheckinbut} style={{display: onTogglebut? 'none': 'block'}}>
+                            <div className='text-start'>Check in</div>
+                            <div className="text-muted text-start">Add dates</div>
+                        </button>
+                        
+                        <button type="button" class="btn btn-light" onClick={handleCheckoutbut} style={{display: onTogglebut? 'none': 'block'}}>
+                            <div className='text-start'>Check out</div>
+                            <div className="text-muted text-start">Add dates</div>
+                        </button>
+
+                        <button type="button" class="btn btn-light" onClick={handleAddguestbut}>
+                            Add Guests
+                            <button className="btn btn-danger rounded-pill ms-2 me-0">
+                            <i className="fa-solid fa-magnifying-glass"></i>
                             <span className='ms-1'>Search</span>
                             </button>
-                        </div>
-                    </a>
+                        </button>
+                    </div>
                 </div>
 
-                <div className="container-fluid bg-none center dropdown-content heightauto d-flex justify-content-center h-50">
-                <div className="worldmap">Hello</div>
-                <div className="worldmapB">worldmapB</div>
-                <div className="worldmapC">worldmapC</div>
-            </div>
-            </div>
+                <div className="container-fluid bg-none center dropdown-content heightauto d-flex justify-content-center h-50" >
+                    <div className="worldmapb" style={{display: isWherebuttoggled? 'block':'none'}} ref={butRef}>worldmapB</div>
+                    <div className="worldmapa" style={{display: isCheckinbut? 'block':'none'}} ref={butRef}>Check In</div>
+                    <div className="worldmapa" style={{display: isCheckoutbut? 'block':'none'}} ref={butRef}>Check Out</div>
+                    <div className="worldmapc" style={{display: isAddguestbut? 'block':'none'}} ref={butRef}>worldmapC</div>
+                </div>
+        </div>
 
     );
 }

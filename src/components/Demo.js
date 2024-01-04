@@ -11,7 +11,6 @@ function Demo(){
                     <a className="btn">Online Experiences</a>
                 </div>
             </div>         
-            
         </div>
     );
 }

@@ -13,6 +13,8 @@ import Filterbut from './components/Filterbut';
 import Rowtwo from './components/Rowtwo';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 const rowtwo = ReactDOM.createRoot(document.getElementById('rowtwo'));
 rowtwo.render(
   <React.StrictMode>

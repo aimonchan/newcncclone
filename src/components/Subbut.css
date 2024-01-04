@@ -38,6 +38,10 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.butgroup{
+    position:relative;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -47,23 +51,23 @@
     z-index: 2000;
   }
 
-  .worldmap{
+  .worldmapa{
     display:block;
     position: absolute;
     background-color: white;
-    top: 90px;
+    top: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 65%;
     height:300px;
     border-radius: 20px;
   }
 
-  .worldmapB{
-    display:none;
+  .worldmapb{
+    display:block;
     position:absolute;
     background-color:white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: 90px;
+    top: 10px;
     left: 18%;
     right:50px;
     width: 35%;
@@ -71,12 +75,12 @@
     border-radius: 20px;
   }
 
-  .worldmapC{
-    display:none;
+  .worldmapc{
+    display:block;
     position:absolute;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: 90px;
+    top: 10px;
     right:17%;
     width: 35%;
     height:300px;

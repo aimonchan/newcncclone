@@ -6,7 +6,7 @@ function Tributton() {
     <>
       <div
         id="main"
-        className="d-flex bttn btn-group btn-group-md border rounded-pill bg-primary"
+        className="d-flex bttn btn-group btn-group-md border rounded-pill"
         role="group"
       >
         <button type="button" className="btn text-truncate">
